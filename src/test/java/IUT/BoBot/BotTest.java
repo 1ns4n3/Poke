@@ -13,4 +13,10 @@ public class BotTest
     {
         assertEquals("Bonjour!", bot.ask("Bonjour"));
     }
+    
+    @Test
+    public void testJeMAppelle()
+    {
+        assertEquals("Bonjour Seb!", bot.ask("Je m'appelle Seb"));
+    }
 }
