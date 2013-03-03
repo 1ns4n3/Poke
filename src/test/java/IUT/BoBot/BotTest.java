@@ -1,0 +1,16 @@
+package IUT.BoBot;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BotTest 
+{
+	Bot bot = new Bot();
+	
+    @Test
+    public void testBonjour()
+    {
+        assertEquals("Bonjour!", bot.ask("Bonjour"));
+    }
+}
