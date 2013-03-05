@@ -4,6 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * 
+ * Integration tests ensuring that the Bot
+ * uses some of the SmartCells.
+ *
+ */
 public class BotTest 
 {
 	Bot bot = new Bot();
@@ -21,8 +27,8 @@ public class BotTest
     }
     
     @Test
-    public void testWhosAwesome()
+    public void testNull()
     {
-        assertEquals("You're awesome!", bot.ask("Who's awesome?"));
+        assertEquals(null, bot.ask("This is not a question."));
     }
 }

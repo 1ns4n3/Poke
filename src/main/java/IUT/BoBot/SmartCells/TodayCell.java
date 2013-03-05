@@ -4,15 +4,25 @@ import java.util.Calendar;
 
 import IUT.BoBot.SmartCell;
 
+/**
+ * Reply to "Quel jour est-il?"
+ *
+ */
 public class TodayCell implements SmartCell {
 	
 	Calendar calendar;
 
-	TodayCell() {
+	/**
+	 * Initialize the cell with the date of today.
+	 */
+	public TodayCell() {
 		this.calendar = Calendar.getInstance();
 	}
 	
-	TodayCell(Calendar calendar) {
+	/**
+	 * Initialize the cell with the date passed in.
+	 */
+	public TodayCell(Calendar calendar) {
 		this.calendar = calendar;
 	}
 	

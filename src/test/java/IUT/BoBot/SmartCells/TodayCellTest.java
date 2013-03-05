@@ -9,12 +9,14 @@ import org.junit.Test;
 
 public class TodayCellTest {
 	
-	Calendar mockCalendar = Calendar.getInstance();
-	TodayCell cell = new TodayCell(mockCalendar);
+	// Tests should not depend on the current date.
+	// So initialize the TodayCell with a fixed date.
+	Calendar calendar = Calendar.getInstance();
+	TodayCell cell = new TodayCell(calendar);
 	
 	@Before
 	public void setUp() {
-		mockCalendar.set(2013, 2, 8);
+		calendar.set(2013, 2, 8);
 	}
 	
 	@Test

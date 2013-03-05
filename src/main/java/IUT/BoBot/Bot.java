@@ -6,12 +6,13 @@ import IUT.BoBot.SmartCells.*;
 public class Bot 
 {
 	/**
-	 * List of smartCells the questions are asked to.
+	 * List of SmartCells the questions go through to
+	 * find an answer.
 	 */
 	final SmartCell[] smartCells = new SmartCell[] {
 		new BonjourCell(),
 		new BonjourWithNameCell(),
-		new WhosAwesomeCell()
+		new TodayCell()
 	};
 
 	/**
