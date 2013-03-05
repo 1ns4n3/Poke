@@ -1,23 +1,26 @@
 package IUT.BoBot;
 
+import java.util.Collection;
+
+import IUT.BoBot.SmartCells.*;
+
 
 public class Bot 
 {
+	final SmartCell[] smartCells = new SmartCell[] {
+		new BonjourCell(),
+		new BonjourWithNameCell(),
+		new WhosAwesomeCell()
+	};
 
+	
 	public String ask(String question) {
-		if (question.contains("m'appelle"))
-			return "Bonjour " + extractName(question) + "!";
-		else if (question == "Who's awesome?")
-			return "You're awesome!";
-		else
-			return "Bonjour!";
+		for(SmartCell cell:smartCells) {
+			String answer = cell.answer(question);
+			if(answer != null)
+			  return answer;
+		}
+		return null;
 	}
 	
-	private String extractName(String question) {
-		String bits[] = question.split("appelle ");
-		String name = bits[bits.length - 1];
-		
-		return name;
-	}
-
 }
