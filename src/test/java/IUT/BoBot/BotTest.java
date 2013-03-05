@@ -19,4 +19,10 @@ public class BotTest
     {
         assertEquals("Bonjour Seb!", bot.ask("Je m'appelle Seb"));
     }
+    
+    @Test
+    public void testWhosAwesome()
+    {
+        assertEquals("You're awesome!", bot.ask("Who's awesome?"));
+    }
 }
