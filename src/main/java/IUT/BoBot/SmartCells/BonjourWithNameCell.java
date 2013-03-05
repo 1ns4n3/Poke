@@ -3,14 +3,8 @@ package IUT.BoBot.SmartCells;
 import IUT.BoBot.SmartCell;
 
 public class BonjourWithNameCell implements SmartCell {
-	
-	String question;
 
-	public BonjourWithNameCell(String p_question) {
-		question = p_question;
-	}
-
-	public String answer() {
+	public String answer(String question) {
 		if (question.contains("m'appelle"))
 			return "Bonjour " + extractName(question) + "!";
 		else

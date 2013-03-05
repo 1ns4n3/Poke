@@ -5,22 +5,21 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class BonjourWithNameCellTest {
+	
+	BonjourWithNameCell cell = new BonjourWithNameCell();
 
 	@Test
 	public void testBonjourWithNameSeb() {
-		BonjourWithNameCell cell = new BonjourWithNameCell("Je m'appelle Seb");
-		assertEquals("Bonjour Seb!", cell.answer());
+		assertEquals("Bonjour Seb!", cell.answer("Je m'appelle Seb"));
 	}
 	
 	@Test
 	public void testBonjourWithNameBob() {
-		BonjourWithNameCell cell = new BonjourWithNameCell("Je m'appelle Bob");
-		assertEquals("Bonjour Bob!", cell.answer());
+		assertEquals("Bonjour Bob!", cell.answer("Je m'appelle Bob"));
 	}
 
 	@Test
 	public void testBonjourWithoutName() {
-		BonjourWithNameCell cell = new BonjourWithNameCell("Yo!");
-		assertEquals(null, cell.answer());
+		assertEquals(null, cell.answer("Yo!"));
 	}
 }

@@ -1,5 +1,5 @@
 package IUT.BoBot;
 
 public interface SmartCell {
-	public abstract String answer();
+	public abstract String answer(String question);
 }

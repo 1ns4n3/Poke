@@ -5,17 +5,17 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class WhosAwesomeCellTest {
+	
+	WhosAwesomeCell cell = new WhosAwesomeCell();
 
 	@Test
 	public void testAwesome() {
-		WhosAwesomeCell cell = new WhosAwesomeCell("Who's awesome?");
-		assertEquals("You're awesome!", cell.answer());
+		assertEquals("You're awesome!", cell.answer("Who's awesome?"));
 	}
 	
 	@Test
 	public void testNotAwesome() {
-		WhosAwesomeCell cell = new WhosAwesomeCell("Hey!");
-		assertEquals(null, cell.answer());
+		assertEquals(null, cell.answer("Hey!"));
 	}
 
 }
