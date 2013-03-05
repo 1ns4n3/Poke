@@ -11,7 +11,7 @@ public class BonjourCell implements SmartCell {
 	}
 
 	public String answer() {
-		if(question.contains("bonjour"))
+		if(question.contains("Bonjour"))
 		  return "Bonjour!";
 		else
 		  return null;

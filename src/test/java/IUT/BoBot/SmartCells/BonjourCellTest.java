@@ -8,7 +8,7 @@ public class BonjourCellTest {
 
 	@Test
 	public void testBonjour() {
-		BonjourCell cell = new BonjourCell("bonjour");
+		BonjourCell cell = new BonjourCell("Bonjour");
 		assertEquals("Bonjour!", cell.answer());
 	}
 	
