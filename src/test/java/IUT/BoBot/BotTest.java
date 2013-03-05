@@ -6,8 +6,9 @@ import org.junit.Test;
 
 /**
  * 
- * Integration tests ensuring that the Bot
- * uses some of the SmartCells.
+ * Integration tests checking the Bot
+ * behavior. We just test some cases to make sure that the
+ * Bot is using SmartCells properly.
  *
  */
 public class BotTest 
