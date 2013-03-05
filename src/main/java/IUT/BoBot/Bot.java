@@ -1,7 +1,5 @@
 package IUT.BoBot;
 
-import java.util.Collection;
-
 import IUT.BoBot.SmartCells.*;
 
 
