@@ -11,5 +11,11 @@ public class BonjourCellTest {
 		BonjourCell cell = new BonjourCell("bonjour");
 		assertEquals("Bonjour!", cell.answer());
 	}
+	
+	@Test
+	public void testNotBonjour() {
+		BonjourCell cell = new BonjourCell("au revoir");
+		assertEquals(null, cell.answer());
+	}
 
 }

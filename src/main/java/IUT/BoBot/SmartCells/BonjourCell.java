@@ -3,13 +3,18 @@ package IUT.BoBot.SmartCells;
 import IUT.BoBot.SmartCell;
 
 public class BonjourCell implements SmartCell {
+	
+	String question;
 
-	public BonjourCell(String question) {
-		// TODO Auto-generated constructor stub
+	public BonjourCell(String p_question) {
+		question = p_question;
 	}
 
 	public String answer() {
-		return "Bonjour!";
+		if(question.contains("bonjour"))
+		  return "Bonjour!";
+		else
+		  return null;
 	}
 
 }
