@@ -10,12 +10,12 @@ public class WhosAwesomeCellTest {
 
 	@Test
 	public void testAwesome() {
-		assertEquals("You're awesome!", cell.answer("Who's awesome?"));
+		assertEquals("You're awesome!", cell.ask("Who's awesome?"));
 	}
 	
 	@Test
 	public void testNotAwesome() {
-		assertEquals(null, cell.answer("Hey!"));
+		assertEquals(null, cell.ask("Hey!"));
 	}
 
 }

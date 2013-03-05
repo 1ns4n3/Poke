@@ -10,16 +10,16 @@ public class BonjourWithNameCellTest {
 
 	@Test
 	public void testBonjourWithNameSeb() {
-		assertEquals("Bonjour Seb!", cell.answer("Je m'appelle Seb"));
+		assertEquals("Bonjour Seb!", cell.ask("Je m'appelle Seb"));
 	}
 	
 	@Test
 	public void testBonjourWithNameBob() {
-		assertEquals("Bonjour Bob!", cell.answer("Je m'appelle Bob"));
+		assertEquals("Bonjour Bob!", cell.ask("Je m'appelle Bob"));
 	}
 
 	@Test
 	public void testBonjourWithoutName() {
-		assertEquals(null, cell.answer("Yo!"));
+		assertEquals(null, cell.ask("Yo!"));
 	}
 }

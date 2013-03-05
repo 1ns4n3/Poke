@@ -14,7 +14,7 @@ public class Bot
 	
 	public String ask(String question) {
 		for(SmartCell cell:smartCells) {
-			String answer = cell.answer(question);
+			String answer = cell.ask(question);
 			if(answer != null)
 			  return answer;
 		}

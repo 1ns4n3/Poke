@@ -10,12 +10,12 @@ public class BonjourCellTest {
 
 	@Test
 	public void testBonjour() {
-		assertEquals("Bonjour!", cell.answer("Bonjour"));
+		assertEquals("Bonjour!", cell.ask("Bonjour"));
 	}
 	
 	@Test
 	public void testNotBonjour() {
-		assertEquals(null, cell.answer("au revoir"));
+		assertEquals(null, cell.ask("au revoir"));
 	}
 
 }

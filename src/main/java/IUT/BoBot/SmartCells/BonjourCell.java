@@ -4,7 +4,7 @@ import IUT.BoBot.SmartCell;
 
 public class BonjourCell implements SmartCell {
 	
-	public String answer(String question) {
+	public String ask(String question) {
 		if(question.contains("Bonjour"))
 		  return "Bonjour!";
 		else
