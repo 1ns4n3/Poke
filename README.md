@@ -1,5 +1,5 @@
-# BoBot
+#PokeBotDemo
+[![Build Status](https://travis-ci.org/IUTInfoAix/PokeBotBot.png?branch=master)](https://travis-ci.org/IUTInfoAix/PokeBotBot)
 
-[![Build Status](https://travis-ci.org/IUTInfoAix/BoBot.png?branch=master)](https://travis-ci.org/IUTInfoAix/BoBot)
 
-http://bit.ly/iut-4
+Bot pokemon de démonstration contruit en utilisant TwitterUserStreamEasy et Twitter4J
