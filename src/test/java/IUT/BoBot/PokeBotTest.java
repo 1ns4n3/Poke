@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
  * behavior. We just test some cases to make sure that the
  * PokeBot is using SmartCells properly.
  */
-public class BotTest {
+public class PokeBotTest {
     PokeBot pokeBot = new PokeBot();
 
     @Test
     public void testBonjour() {
-        assertEquals("Bonjour!", pokeBot.ask("Bonjour"));
+        assertEquals("Pika pika", pokeBot.ask("Salut"));
     }
 
     @Test

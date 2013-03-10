@@ -5,11 +5,11 @@ import fr.univaix.iut.pokebattle.SmartCell;
 /**
  * Reply to Bonjour.
  */
-public class BonjourCell implements SmartCell {
+public class PokemonCriesCell implements SmartCell {
 
     public String ask(String question) {
-        if (question.contains("Bonjour"))
-            return "Bonjour!";
+        if (question.contains("Salut"))
+            return "Pika pika";
         else
             return null;
     }
