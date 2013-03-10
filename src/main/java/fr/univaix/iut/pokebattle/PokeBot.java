@@ -1,19 +1,15 @@
 package fr.univaix.iut.pokebattle;
 
 import fr.univaix.iut.pokebattle.smartcells.BonjourCell;
-import fr.univaix.iut.pokebattle.smartcells.BonjourWithNameCell;
-import fr.univaix.iut.pokebattle.smartcells.TodayCell;
 
 
-public class Bot {
+public class PokeBot {
     /**
      * List of SmartCells the questions go through to
      * find an answer.
      */
     final SmartCell[] smartCells = new SmartCell[]{
             new BonjourCell(),
-            new BonjourWithNameCell(),
-            new TodayCell()
     };
 
     /**

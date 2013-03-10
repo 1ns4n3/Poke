@@ -1,30 +1,25 @@
 package IUT.BoBot;
 
-import static org.junit.Assert.*;
-
-import fr.univaix.iut.pokebattle.Bot;
+import fr.univaix.iut.pokebattle.PokeBot;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
- * Integration tests checking the Bot
+ * Integration tests checking the PokeBot
  * behavior. We just test some cases to make sure that the
- * Bot is using SmartCells properly.
+ * PokeBot is using SmartCells properly.
  */
 public class BotTest {
-    Bot bot = new Bot();
+    PokeBot pokeBot = new PokeBot();
 
     @Test
     public void testBonjour() {
-        assertEquals("Bonjour!", bot.ask("Bonjour"));
-    }
-
-    @Test
-    public void testJeMAppelle() {
-        assertEquals("Bonjour Seb!", bot.ask("Je m'appelle Seb"));
+        assertEquals("Bonjour!", pokeBot.ask("Bonjour"));
     }
 
     @Test
     public void testNull() {
-        assertEquals(null, bot.ask("This is not a question."));
+        assertEquals(null, pokeBot.ask("This is not a question."));
     }
 }
