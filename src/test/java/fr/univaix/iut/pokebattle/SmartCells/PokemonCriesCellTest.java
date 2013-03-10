@@ -1,4 +1,4 @@
-package IUT.BoBot.SmartCells;
+package fr.univaix.iut.pokebattle.SmartCells;
 
 import fr.univaix.iut.pokebattle.smartcells.PokemonCriesCell;
 import org.junit.Test;

@@ -1,6 +1,5 @@
-package IUT.BoBot;
+package fr.univaix.iut.pokebattle;
 
-import fr.univaix.iut.pokebattle.PokeBot;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -14,7 +13,7 @@ public class PokeBotTest {
     PokeBot pokeBot = new PokeBot();
 
     @Test
-    public void testBonjour() {
+    public void testSalut() {
         assertEquals("Pika pika", pokeBot.ask("Salut"));
     }
 
