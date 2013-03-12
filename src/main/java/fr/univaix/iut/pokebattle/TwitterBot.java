@@ -40,12 +40,12 @@ public class TwitterBot {
         twitterUserStreamEasy = new TwitterUserStreamEasy(listener);
     }
 
-    private boolean isTweetForMe(Status status) throws TwitterException {
-        return status.getText().contains(twitter.getScreenName());
-    }
-
     public void startBot() throws InterruptedException, ControlStreamException, IOException {
         twitterUserStreamEasy.oauth();
+    }
+
+    private boolean isTweetForMe(Status status) throws TwitterException {
+        return status.getText().contains(twitter.getScreenName());
     }
 
     private boolean isTweetOfMe(Status status) throws TwitterException {
