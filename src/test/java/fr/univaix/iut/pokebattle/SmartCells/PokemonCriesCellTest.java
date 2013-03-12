@@ -16,7 +16,7 @@ public class PokemonCriesCellTest {
 
     @Test
     public void testNotSalut() {
-        assertEquals(null, cell.ask("au revoir"));
+        assertEquals("Pika pika", cell.ask("au revoir"));
     }
 
 }

@@ -8,10 +8,7 @@ import fr.univaix.iut.pokebattle.SmartCell;
 public class PokemonCriesCell implements SmartCell {
 
     public String ask(String question) {
-        if (question.contains("Salut"))
-            return "Pika pika";
-        else
-            return null;
+        return "Pika pika";
     }
 
 }
