@@ -11,19 +11,18 @@ public class TwitterBot {
 
     TwitterUserStreamEasy twitterUserStreamEasy;
 
-    public TwitterBot() {
-
+    public TwitterBot(final Bot bot) {
         UserStreamListener listener = new UserStreamAdapter() {
-            PokeBot pokeBot = new PokeBot();
+
             Twitter twitter = TwitterFactory.getSingleton();
 
             @Override
             public void onStatus(Status status) {
                 try {
                     System.out.println("TwitterUserStreamEasyExample.onStatus");
-                    String response = pokeBot.ask(status.getText());
+                    String response = bot.ask(status.getText());
                     System.out.println(response);
-                    if(response != null)
+                    if (response != null)
                         twitter.updateStatus(response);
                 } catch (TwitterException e) {
                     e.printStackTrace();
@@ -41,7 +40,7 @@ public class TwitterBot {
     public static void main(String[] args) {
 
         try {
-            TwitterBot twitterBot = new TwitterBot();
+            TwitterBot twitterBot = new TwitterBot(new PokeBot());
             twitterBot.startBot();
         } catch (InterruptedException e) {
             e.printStackTrace();
