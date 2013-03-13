@@ -1,6 +1,6 @@
 package fr.univaix.iut.pokebattle.SmartCells;
 
-import twitter4j.Status;
+import fr.univaix.iut.pokebattle.pokeStatus;
 import fr.univaix.iut.pokebattle.smartcells.PokemonCriesCell;
 import org.junit.Test;
 
@@ -11,12 +11,16 @@ public class PokemonCriesCellTest {
 
     @Test
     public void testSalut() {
-        assertEquals("Pika pika", cell.ask("Salut!"));
+    	pokeStatus status = new pokeStatus();
+        assertEquals("@PaulMista Pika pika", cell.ask(status));
     }
-
+    /*
     @Test
     public void testNotSalut() {
         assertEquals("Pika pika", cell.ask("au revoir"));
     }
+    */
+
+
 
 }
