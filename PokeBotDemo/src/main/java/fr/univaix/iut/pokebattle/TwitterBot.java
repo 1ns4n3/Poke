@@ -26,8 +26,15 @@ public class TwitterBot {
                         logger.info("Ignored status change");
                         return;
                     }
-
-                    String response = bot.ask(status.getText());
+                    /*
+                    User responseUser = status.getUser(); // récupération du status
+                    
+                    String screenName = ("@" +responseUser.getScreenName()); // récupération de l'interlocuteur
+                    
+                    String response = (screenName +" "+ bot.ask(status.getText())); // réponse !
+                    */
+                    String response = bot.ask(status);
+                    
                     if (response != null)
                         twitter.updateStatus(response);
                     
@@ -64,4 +71,5 @@ public class TwitterBot {
             e.printStackTrace();
         }
     }
+
 }

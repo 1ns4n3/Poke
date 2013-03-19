@@ -1,5 +1,7 @@
 package fr.univaix.iut.pokebattle;
 
+import twitter4j.Status;
+
 public interface Bot {
-    String ask(String question);
+    String ask(Status string);
 }
