@@ -20,12 +20,17 @@ public class pokeStatus implements Status{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	String text;
 
 
 	@Override
 	public String getText() {
 		// TODO Auto-generated method stub
-		return "Salut";
+		return text;
+	}
+	
+	public void setText(String param) {
+		text = param;
 	}
 	
 	public String getScreenName(){
