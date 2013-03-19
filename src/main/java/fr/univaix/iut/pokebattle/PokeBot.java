@@ -1,7 +1,10 @@
 package fr.univaix.iut.pokebattle;
 
 import twitter4j.Status;
+<<<<<<< HEAD:PokeBotDemo/src/main/java/fr/univaix/iut/pokebattle/PokeBot.java
 import fr.univaix.iut.pokebattle.smartcells.AttackCell;
+=======
+>>>>>>> ac42c2523dc0d6e42e45f87f14b9d349620c6f4b:src/main/java/fr/univaix/iut/pokebattle/PokeBot.java
 import fr.univaix.iut.pokebattle.smartcells.PokemonCriesCell;
 
 
@@ -30,4 +33,10 @@ public class PokeBot implements Bot {
         }
         return null;
     }
+<<<<<<< HEAD:PokeBotDemo/src/main/java/fr/univaix/iut/pokebattle/PokeBot.java
+=======
+
+
+
+>>>>>>> ac42c2523dc0d6e42e45f87f14b9d349620c6f4b:src/main/java/fr/univaix/iut/pokebattle/PokeBot.java
 }
