@@ -9,6 +9,8 @@ public class AttackCell implements SmartCell {
 	public String ask(Status question) {
 		if(question.getText().contains("#attack"))
 		{	
+			// ask contains pcreux: "@pikachuNyanNian #attack #foudre @bulbizare1"
+			// answer should contains : "pikachuNyanNian: "@bulbizare1 #attack #foudre! /cc @pcreux"
 			String alias = question.getText();
 			String[] alias2 = alias.split(" ");
 			String pokemonAttacked = alias2[3];
