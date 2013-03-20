@@ -15,6 +15,7 @@ public class PokeBot implements Bot {
             new OwnerCell(),
             new PokeballCell(),
             new NoOwnerCatchCell(),
+            new AnswerJugeCell(),
     };
 
     /**
