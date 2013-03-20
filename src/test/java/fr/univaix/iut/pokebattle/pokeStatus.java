@@ -1,6 +1,5 @@
 package fr.univaix.iut.pokebattle;
 
-import java.net.URL;
 import java.util.Date;
 
 import twitter4j.Annotations;
@@ -14,6 +13,7 @@ import twitter4j.URLEntity;
 import twitter4j.User;
 import twitter4j.UserMentionEntity;
 
+@SuppressWarnings("deprecation")
 public class pokeStatus implements Status{
 
 	/**
@@ -83,7 +83,6 @@ public class pokeStatus implements Status{
 		return null;
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public Annotations getAnnotations() {
 		// TODO Auto-generated method stub

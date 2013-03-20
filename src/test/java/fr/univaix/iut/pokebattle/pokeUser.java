@@ -7,6 +7,7 @@ import twitter4j.RateLimitStatus;
 import twitter4j.Status;
 import twitter4j.User;
 
+@SuppressWarnings("serial")
 public class pokeUser implements User{
 
 	public String getScreenName(){
