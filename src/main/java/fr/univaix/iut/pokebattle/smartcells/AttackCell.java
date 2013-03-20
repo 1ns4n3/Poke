@@ -15,7 +15,9 @@ public class AttackCell implements SmartCell {
 			String pokemonAttacked = alias2[3];
 			String attackName = alias2[2];
 			String dresseur = question.getScreenName();
-			String response = pokemonAttacked + " #attack " + attackName + "! /cc @" + dresseur;
+			String owner = alias2[5];
+			String response = pokemonAttacked + " #attack " + attackName
+					          + "! /cc " + owner + " @" + dresseur;			
 			return response;
 		}
 		return null;
