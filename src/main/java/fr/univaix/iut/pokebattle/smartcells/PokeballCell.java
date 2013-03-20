@@ -13,8 +13,10 @@ public class PokeballCell implements SmartCell {
 			OwnerCell test = new OwnerCell();
 			Tweet tweet = new Tweet(question.getText() + " Owner?");
 			String testOwner = test.ask(tweet);
-			if (testOwner.contains("No owner")) 
+			if (testOwner.contains("No owner")) {
+				updateOwner(question);
 				reponse += reponse + "is my owner";
+			}
 			else
 				reponse = testOwner;
 			
@@ -23,4 +25,9 @@ public class PokeballCell implements SmartCell {
 		return null;
 	}
 
+	public void updateOwner(Tweet tweet){
+		String description = " - Owner: @" + tweet.getScreenName();
+		
+		/**/.updateProfile(null,null,null,description);
+	}
 }
