@@ -13,6 +13,7 @@ public class PokeBot implements Bot {
     		new PokemonCriesCell(),
             new AttackCell(),
             new OwnerCell(),
+            new NoOwnerCatchCell(),
     };
 
     /**
