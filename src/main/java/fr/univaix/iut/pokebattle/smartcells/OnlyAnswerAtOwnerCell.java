@@ -1,18 +1,17 @@
 package fr.univaix.iut.pokebattle.smartcells;
 
-import twitter4j.Status;
-import fr.univaix.iut.pokebattle.SmartCell;
+import fr.univaix.iut.pokebattle.*;
 
 public class OnlyAnswerAtOwnerCell implements SmartCell {
 
 	@Override
-	public String ask(Status question) {
+	public String ask(Tweet question) {
 
 		//pcreux: "@pikachuNyanNian #attack #foudre @bulbizare1"
 		//pikachuNyanNian: "@pcreux @nedseb is my owner"
 		String reponse = "";
 		if (/*Owner != Twitteur*/) {
-			reponse +=  "@" + question.getUser().getScreenName()
+			reponse +=  "@" + question.getScreenName()
 					  + " " /* + Owner*/ + " is my owner";
 		}
 		else

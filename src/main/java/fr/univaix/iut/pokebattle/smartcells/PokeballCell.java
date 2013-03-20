@@ -1,21 +1,18 @@
 package fr.univaix.iut.pokebattle.smartcells;
 
-import twitter4j.Status;
-import fr.univaix.iut.pokebattle.SmartCell;
-import fr.univaix.iut.pokebattle.pokeStatus;
+import fr.univaix.iut.pokebattle.*;
 
 public class PokeballCell implements SmartCell {
 
 	@Override
-	public String ask(Status question) {
+	public String ask(Tweet question) {
 		if(question.getText().contains("PokeBall"))
 		{
-			String reponse = "@" + question.getUser().getScreenName() + " ";
+			String reponse = "@" + question.getScreenName() + " ";
 			
 			OwnerCell test = new OwnerCell();
-			pokeStatus status = new pokeStatus();
-			status.setText(question.getText() + " Owner?");
-			String testOwner = test.ask(status);
+			Tweet tweet = new Tweet(question.getText() + " Owner?");
+			String testOwner = test.ask(tweet);
 			if (testOwner.contains("No owner")) 
 				reponse += reponse + "is my owner";
 			else

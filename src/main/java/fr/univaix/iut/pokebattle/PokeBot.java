@@ -1,6 +1,5 @@
 package fr.univaix.iut.pokebattle;
 
-import twitter4j.Status;
 
 import fr.univaix.iut.pokebattle.smartcells.*;
 
@@ -12,7 +11,7 @@ public class PokeBot implements Bot {
     final SmartCell[] smartCells = new SmartCell[]{
     		new PokemonCriesCell(),
             new AttackCell(),
-            new OnlyAnswerAtOwnerCell(),
+            //new OnlyAnswerAtOwnerCell(),
             new OwnerCell(),
             new PokeballCell(),
             new NoOwnerCatchCell(),
@@ -25,7 +24,7 @@ public class PokeBot implements Bot {
      * @return An answer... or null if it doesn't get it.
      */
     @Override
-    public String ask(Status question) {
+    public String ask(Tweet question) {
         for (SmartCell cell : smartCells) {
             String answer = cell.ask(question);
             if (answer != null)

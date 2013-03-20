@@ -13,8 +13,7 @@ public class PokeBotTest {
 
     @Test
     public void testSalut() {
-    	pokeStatus status = new pokeStatus();
-    	status.setText("Salut");
-    	assertEquals("@PaulMista Pika pika", pokeBot.ask(status));
+    	Tweet tweet = new Tweet("Salut");
+    	assertEquals("@PaulMista Pika pika", pokeBot.ask(tweet));
     }
 }
